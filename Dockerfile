@@ -14,5 +14,5 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 # Copy backend WAR to Tomcat
 COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/back1.war
 
-EXPOSE 8080
+EXPOSE 8083
 CMD ["catalina.sh", "run"]
